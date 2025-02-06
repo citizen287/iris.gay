@@ -1,0 +1,22 @@
+ body {
+     background-color: gray;
+ }
+
+ h1 {
+     font-family: "OCR A Std", FreeMono, monospace;
+     text-align: center;
+     font-size: 40px;
+}
+
+ main {
+    text-align: center;
+    font-size: 15px;
+}
+
+.trans {
+    width:1700px;
+    height:800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
