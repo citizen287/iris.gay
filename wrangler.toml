@@ -1,0 +1,3 @@
+name = "your-site-name"
+main = "index.html" 
+type = "javascript"
