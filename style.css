@@ -12,11 +12,12 @@
     text-align: center;
     font-size: 25px;
 }
+box {
+  width: 30%;
+  height: 200px;
+}
 
 .trans {
-    width:1700px;
-    height:800px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 100%; /* takes the 100 % width of its container (.box div)*/
+  height: 100%; /* takes the 100 % height of its container (.box div)*/
 }
