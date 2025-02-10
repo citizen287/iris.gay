@@ -74,6 +74,7 @@
           this.echo("[[;yellow;]clear[[;white;] - clears your terminal's screen if this is possible")
           this.echo("[[;yellow;]ls[[;white;] - list directory contents")
           this.echo("[[;yellow;]cd[[;white;] - change the working directory")
+          this.echo("[[;yellow;]whoami[[;white;] - Tells you a bit about me")
         },
         ls: function() {
             const { directories, files } = fileSystem[currentPath] || { directories: [], files: [] };
@@ -99,10 +100,13 @@
             this.set_prompt(getPrompt());
         },
         whoami: function() {
-          const img = $('<img src="https://picsum.photos/' +
-            250 + '/' + 250 + '">');
+          const img = $('<img src="img/iris.jpg">');
           this.echo(img);
-          this.echo("example image, the command is still beign worked on")
+          this.echo("[[;white;]Hi, I'm Iris a transfeminine girl (She/Her), also known as citizen287 online.]")
+          this.echo("[[;white;]I'm a 16-year-old high school student passionate about cybersecurity, aiming for a future in red teaming.]")  
+          this.echo("[[;white;]OSINT is one of my strongest skills I excel at gathering, analyzing, and correlating publicly available data for security research and investigations.")
+          this.echo("[[;yellow;]CONTACT INFO\n[[;blue;]Discord[[;white;] - Citizen287\n[[;green;]Email[[;white;] - Iris@iris.gay")  
+
           this
         },
         },
@@ -110,3 +114,6 @@
         name: 'my_terminal',prompt:getPrompt()
     });
 });
+
+
+
