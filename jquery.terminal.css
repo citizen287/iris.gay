@@ -18,6 +18,12 @@
  .cmd-prompt, .cmd-prompt div {
      display: inline-block;
  }
+ @font-face {
+    font-family: 'vga';
+    src: url('../font/ibm-vga.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
  .terminal h1, .terminal h2, .terminal h3, .terminal h4, .terminal h5, .terminal h6, .terminal pre, .cmd {
      margin: 0;
  }
@@ -275,7 +281,7 @@
  .cmd,
  .terminal-font-forcer,
  .cmd span:not(.fas):not(.far):not(.fa) {
-     font-family: monospace;
+     font-family: 'vga', monospace;
      font-family: var(--font, monospace);
  }
  .terminal,
@@ -1203,7 +1209,7 @@
 body {
     background-color: black;
     color: #00FF00; /* Classic green terminal text */
-    font-family: 'Courier New', monospace;
+    font-family: 'vga', monospace;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -1221,11 +1227,15 @@ nav {
   nav a {
     color: #00FF00;
     text-decoration: none;
-    font-family: 'Courier New', monospace;
+    font-family: 'vga', monospace;
     margin: 0 15px;
     font-size: 18px;
   }
   nav a:hover {
     text-decoration: underline;
   }
-  
+  .terminal, .cmd, .terminal .terminal-output div div, .cmd .prompt {
+    font-family: 'vga', monospace;
+    font-size: 20px;
+    line-height: 12px;
+    }
