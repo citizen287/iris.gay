@@ -20,9 +20,10 @@
  }
  @font-face {
     font-family: 'vga';
-    src: url('../font/ibm-vga.woff') format('woff');
+    src: url('font/ibm-vga.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-size: small;
 }
  .terminal h1, .terminal h2, .terminal h3, .terminal h4, .terminal h5, .terminal h6, .terminal pre, .cmd {
      margin: 0;
@@ -282,11 +283,11 @@
  .terminal-font-forcer,
  .cmd span:not(.fas):not(.far):not(.fa) {
      font-family: 'vga', monospace;
-     font-family: var(--font, monospace);
+     font-family: var('vga', monospace);
  }
  .terminal,
  .cmd {
-     font-size: 12px;
+     font-size: 15px;
  }
  .terminal-output > div:not(.raw) div::before,
  .cmd .cmd-line::before {
@@ -875,7 +876,7 @@
      .cmd,
      .cmd span,
      .cmd div {
-         font-size: calc(var(--size, 1) * (12px / var(--pixel-density, 1)));
+         font-size: calc(var(--1, 1) * (11px / var(--pixel-density, 1)));
      }
      .terminal-output .emoji, .cmd .emoji {
          height: calc(var(--size, 1) * (12px / var(--pixel-density, 1)));
@@ -1217,7 +1218,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 nav {
     background-color: black;
     padding: 10px;
@@ -1227,15 +1227,13 @@ nav {
   nav a {
     color: #00FF00;
     text-decoration: none;
-    font-family: 'vga', monospace;
+    font-family:'vga', monospace;
     margin: 0 15px;
     font-size: 18px;
   }
   nav a:hover {
     text-decoration: underline;
   }
-  .terminal, .cmd, .terminal .terminal-output div div, .cmd .prompt {
-    font-family: 'vga', monospace;
-    font-size: 20px;
-    line-height: 12px;
-    }
+.terminal, .cmd, .terminal .terminal-output div div, .cmd .prompt {
+    line-height: 15px;
+}
