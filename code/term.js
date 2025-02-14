@@ -105,7 +105,6 @@
           this.echo("[[;white;]Hi, I'm Iris a transfeminine girl (She/Her), also known as citizen287 online.]")
           this.echo("[[;white;]I'm a 16-year-old high school student passionate about cybersecurity, aiming for a future in red teaming.]")  
           this.echo("[[;white;]OSINT is one of my strongest skills I excel at gathering, analyzing, and correlating publicly available data for security research and investigations.")
-          this.echo("[[;yellow;]CONTACT INFO\n[[;blue;]Discord[[;white;] - Citizen287\n[[;green;]Email[[;white;] - Iris@iris.gay")  
 
           this
         },
